@@ -5,3 +5,4 @@ const sequelize = new Sequelize('ship', 'root', 'coti', {
   dialect: 'mysql'
   
 });
+
