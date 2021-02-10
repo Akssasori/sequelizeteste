@@ -23,13 +23,8 @@ module.exports = {
       }
     }
     catch(err){
-        if (err) {
-          console.log(err);
-          return res.json({ error: 1 });
-        }if(err){
-          console.log(err);
-          return res.json({ error: 2 });
-        }
+      if (err) console.log(err); // mostra o erro ocorrido no User.create;
+      return res.json({ error: 1 }); // retorna com erro code 1, caso de erro no User.create;
       }  
       
 
